@@ -7,6 +7,9 @@ class Buku {
     public $tajuk ;
     public $harga ;
     public $penulis ;
+    public $english ;
+    public $malay ;
+    public $chinese ;
 
 
     // this is constructor @ special method .
