@@ -1,6 +1,7 @@
 <?php
 
 //class is a BLUEPRINT
+//class untuk simpan data.
 class Buku {
 
     // this is a property
@@ -22,7 +23,7 @@ class Buku {
         
     }
 
-// this is a method .
+// this is a method / function untuk kita buat apa , sini kita nak papar maklumat buku..
 public function maklumatBuku() {
 
     return " $this->tajuk  $this->harga  $this->penulis " ;
@@ -31,13 +32,16 @@ public function maklumatBuku() {
 
 }
 
-//kelas untuk cetak informasi produk. apa apa produk.
+//kelas untuk cetak informasi produk. apa apa produk. //object type
 class Cetak {
 
-    
-public function cetakInfoProduk(){
+                            //receive input parameter for this method..
+                            //guna tanda {} supaya tak perlu gabung gabung string..
+                            //kit letak Produk sebab kita nak cetak Produk sahaja..
+public function cetakInfoProduk(  Buku $produk ){
 
-
+    $str = "{$produk->tajuk} {$produk->maklumatBuku()} ";
+    return $str ;
 
     }
 }
@@ -63,6 +67,9 @@ echo "<br>";
 
 echo "Buku 2 " . $produk2->maklumatBuku();
 
+echo "<br>";
 
+$produk3 = new Cetak();
 
-?>
+echo $produk3->cetakInfoProduk($produk1);
+
