@@ -37,7 +37,7 @@ class Cetak {
 
                             //receive input parameter for this method..
                             //guna tanda {} supaya tak perlu gabung gabung string..
-                            //kit letak Produk sebab kita nak cetak Produk sahaja..
+                            //kita letak Produk sebab kita nak cetak Produk sahaja..
 public function cetakInfoProduk(  Buku $produk ){
 
     $str = "{$produk->tajuk} {$produk->maklumatBuku()} ";

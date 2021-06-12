@@ -3,8 +3,8 @@
 class User {
 
 
-    public $firstName ;
-    public $lastName;
+    public $firstName = 'abdul' ;
+    public $lastName = 'karim';
 
 
 public function helloUser() {
@@ -26,8 +26,8 @@ $person2 = new User();
 
 //set the values of class properties
 
-$person1 -> firstName ;
-$person1 -> lastName ;
+$person1 -> firstName = 'ahmad' ;
+$person1 -> lastName = 'albab';
 $person2 -> firstName ;
 $person2 -> lastName ;
 
